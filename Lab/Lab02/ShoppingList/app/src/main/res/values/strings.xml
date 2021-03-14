@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+    <string name="button_main">add item</string>
+    <string name="button_item">Apple</string>
+</resources>
