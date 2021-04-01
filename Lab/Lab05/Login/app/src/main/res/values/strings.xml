@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="button_login">Login</string>
+    <string name="textView_sHeader">Password</string>
+    <string name="textView_header">Email</string>
+    <string name="hint_email">enter your email</string>
+    <string name="hint_password">enter your password</string>
+</resources>
