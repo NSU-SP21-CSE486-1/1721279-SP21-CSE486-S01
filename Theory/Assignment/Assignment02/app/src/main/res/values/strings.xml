@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Assignment</string>
+    <string name="textView_header_main">Personal information</string>
+    <string name="editText_name">Enter your full name</string>
+    <string name="editText_id">Enter first 7 digit</string>
+    <string name="textView_name">Name</string>
+    <string name="textView_id">Student ID</string>
+    <string name="textView_school">School</string>
+    <string name="textView_department">Department</string>
+    <string name="textView_birthday">Date of Birth</string>
+    <string name="button_select_date">Select Date</string>
+    <string name="textView_phone">Phone</string>
+    <string name="editText_phone">Enter your number</string>
+    <string name="textView_nid">NID</string>
+    <string name="editText_nid">Enter 10 digit</string>
+    <string name="button_next">next</string>
+    <string-array name="School_items">
+        <item>SEPS</item>
+        <item>SBE</item>
+        <item>SHS</item>
+        <item>SHLS</item>
+    </string-array>
+    <string-array name="Department_items">
+        <item>ECE</item>
+        <item>ARC</item>
+        <item>CEE</item>
+        <item>BBA</item>
+    </string-array>
+    <string-array name="Phone_code">
+        <item>+880</item>
+    </string-array>
 </resources>
