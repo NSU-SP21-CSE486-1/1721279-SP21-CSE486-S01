@@ -1,6 +1,7 @@
 package com.example.assignment;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     }
 
     public void openDatePicker(View view) {
@@ -52,5 +55,10 @@ public class MainActivity extends AppCompatActivity {
             }
         },year, month, day);
         datePickerDialog.show();
+    }
+
+    public void nextActivity(View view) {
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }
