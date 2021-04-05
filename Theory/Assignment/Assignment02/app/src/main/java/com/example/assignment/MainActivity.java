@@ -17,8 +17,7 @@ public class MainActivity extends AppCompatActivity {
      EditText phone;
      EditText nid;
      Button next;
-     private DatePickerDialog datePickerDialog;
-     private Button dateButton;
+     Button dateButton;
 
      @Override
      protected void onCreate(Bundle savedInstanceState) {
