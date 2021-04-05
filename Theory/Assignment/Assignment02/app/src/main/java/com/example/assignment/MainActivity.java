@@ -1,10 +1,15 @@
 package com.example.assignment;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
      EditText name;
@@ -12,8 +17,11 @@ public class MainActivity extends AppCompatActivity {
      EditText phone;
      EditText nid;
      Button next;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+     private DatePickerDialog datePickerDialog;
+     private Button dateButton;
+
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         name = findViewById(R.id.editText_name);
@@ -21,7 +29,29 @@ public class MainActivity extends AppCompatActivity {
         phone = findViewById(R.id.editText_phone);
         nid = findViewById(R.id.editText_nid);
         next = findViewById(R.id.button_next);
+        dateButton = findViewById(R.id.button_datePicker);
 
 
+
+
+    }
+
+    public void openDatePicker(View view) {
+        int day,month,year;
+        Calendar calendar = Calendar.getInstance();
+        day = calendar.get(Calendar.DAY_OF_MONTH);
+        month = calendar.get(Calendar.MONTH);
+        year = calendar.get(Calendar.YEAR);
+
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                month = month +1;
+                String date = dayOfMonth + "-" + month + "-" + year;
+                dateButton.setText(date);
+
+            }
+        },year, month, day);
+        datePickerDialog.show();
     }
 }
