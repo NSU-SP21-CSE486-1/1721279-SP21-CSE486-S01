@@ -25,7 +25,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         android:autofillHints=""
         android:ems="0"
@@ -48,7 +48,6 @@
         android:hint="@string/editText_id"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_name" />
 
@@ -56,11 +55,14 @@
         android:id="@+id/textView_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/textView_name"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editText_name"
-        app:layout_constraintStart_toStartOf="@+id/editText_name" />
+        app:layout_constraintStart_toStartOf="@+id/editText_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
 
     <TextView
         android:id="@+id/textView_id"
@@ -83,7 +85,6 @@
         android:layout_marginEnd="16dp"
         android:entries="@array/School_items"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_id" />
 
@@ -91,37 +92,37 @@
         android:id="@+id/textView_school"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="@string/textView_school"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/spinner_school"
-        app:layout_constraintStart_toStartOf="@+id/spinner_school"
-        app:layout_constraintTop_toBottomOf="@+id/editText_id"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_id" />
 
     <TextView
         android:id="@+id/textView_department"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/textView_department"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/spinner_department"
-        app:layout_constraintStart_toStartOf="@+id/spinner_department"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_school"
         app:layout_constraintVertical_bias="1.0" />
 
     <Spinner
         android:id="@+id/spinner_department"
         android:layout_width="382dp"
-        android:layout_height="52dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:entries="@array/Department_items"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_school" />
 
@@ -145,14 +146,13 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#FFFFFF"
+        android:onClick="openDatePicker"
         android:text="@string/button_select_date"
         android:textColor="@color/black"
         app:iconTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_department"
-        android:onClick="openDatePicker" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner_department" />
 
     <TextView
         android:id="@+id/textView_phone"
@@ -162,13 +162,13 @@
         android:text="@string/textView_phone"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintBottom_toTopOf="@+id/editText_phone"
         app:layout_constraintStart_toStartOf="@+id/spinner_phone"
         app:layout_constraintTop_toBottomOf="@+id/button_datePicker"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/editText_phone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -186,11 +186,10 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
+        android:entries="@array/Phone_code"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_phone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextPhone"
-        app:layout_constraintVertical_bias="0.0"
-        android:entries="@array/Phone_code"/>
+        app:layout_constraintTop_toTopOf="@+id/editText_phone" />
 
     <TextView
         android:id="@+id/textView_nid"
@@ -200,35 +199,36 @@
         android:text="@string/textView_nid"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+        app:layout_constraintBottom_toTopOf="@+id/editText_nid"
+        app:layout_constraintStart_toStartOf="@+id/editText_nid"
         app:layout_constraintTop_toBottomOf="@+id/spinner_phone" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editText_nid"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:hint="@string/editText_nid"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
-        android:hint="@string/editText_nid" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_phone"
+        android:autofillHints="" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="18dp"
+        android:onClick="nextActivity"
         android:text="@string/button_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
-        android:onClick="nextActivity"/>
+        app:layout_constraintTop_toBottomOf="@+id/editText_nid" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
