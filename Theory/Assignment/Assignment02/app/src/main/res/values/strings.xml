@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Assignment</string>
+    <string name="app_name">Student Information</string>
     <string name="editText_name">Enter your full name</string>
     <string name="editText_id">Enter first 7 digit</string>
     <string name="textView_name">Name</string>

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment">
         <activity android:name=".SecondActivity"
-            android:label = "Assignment"
+            android:label = "Address"
             android:parentActivityName=".MainActivity">
 
         </activity>
