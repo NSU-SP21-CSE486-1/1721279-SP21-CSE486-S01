@@ -13,6 +13,37 @@
     <string name="textView_nid">NID</string>
     <string name="editText_nid">Enter 10 digit</string>
     <string name="button_next">next</string>
+    <string name="textView_road">Road/Block/Sector</string>
+    <string name="textView_house">House/Village/City</string>
+    <string name="textView_police">Police Station</string>
+    <string name="textView_post">Post Office</string>
+    <string name="textView_district">District</string>
+    <string name="textView_pCode">Postal Code</string>
+    <string name="textView_country">Country</string>
+    <string name="textView_present_add">Present Address</string>
+    <string name="textView_permanent_add">Permanent Address</string>
+    <string name="editText_road_hint">Enter road no.</string>
+    <string name="editText_house_hint">Enter house no.</string>
+    <string name="editText_police_hint">Enter police station</string>
+    <string name="editText_post_hint">Enter post office</string>
+    <string name="editText_district_hint">Enter district</string>
+    <string name="editText_pCode_hint">Enter postal code</string>
+    <string name="editText_country_hint">Enter country</string>
+    <string name="editText_road2_hint">Enter road no.</string>
+    <string name="textView_house2">House/Village/City</string>
+    <string name="editText_post2">Enter post office</string>
+    <string name="editText_district2">Enter district</string>
+    <string name="editText_country2">Enter country</string>
+    <string name="editText_police2">Enter police</string>
+    <string name="textView_road2">Road/Block/Sector</string>
+    <string name="textView_police2">Police Station</string>
+    <string name="textView_post2">Post Office</string>
+    <string name="editText_house2_hint">Enter house no.</string>
+    <string name="editText_pCode2_hint">Enter postal code</string>
+    <string name="textView_district2">District</string>
+    <string name="textView_pCode2">Postal Code</string>
+    <string name="textView_country2">Country</string>
+    <string name="button_save">save</string>
     <string-array name="School_items">
         <item>SEPS</item>
         <item>SBE</item>
