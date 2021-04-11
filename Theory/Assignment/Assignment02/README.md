@@ -16,23 +16,5 @@ There will be a total of total of 4 Activities in this Assignment:
 
 
 02) Contact Informations
-     Present Address
-    -> Country
-    -> District
-    -> Post Office
-    -> Police Station
-    -> Postal Code
-    -> House/Village/City
-    -> Road/Block/Sector
-    
-     Permanent Address
-    -> Country
-    -> District
-    -> Post Office
-    -> Police Station
-    -> Postal Code
-    -> House/Village/City
-    -> Road/Block/Sector
-
-4) Display Student ID(s)
-5) Search Feature   
+03) Display Student ID(s)
+04) Search Feature   
