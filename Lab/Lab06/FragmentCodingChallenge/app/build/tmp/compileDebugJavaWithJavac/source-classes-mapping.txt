@@ -1,0 +1,8 @@
+com/example/android/fragmentCodingChallenge/MainActivity.java
+ com.example.android.fragmentCodingChallenge.MainActivity
+com/example/android/fragmentCodingChallenge/BuildConfig.java
+ com.example.android.fragmentCodingChallenge.BuildConfig
+com/example/android/fragmentCodingChallenge/SimpleFragment.java
+ com.example.android.fragmentCodingChallenge.SimpleFragment
+ com.example.android.fragmentCodingChallenge.SimpleFragment$1
+ com.example.android.fragmentCodingChallenge.SimpleFragment$2
