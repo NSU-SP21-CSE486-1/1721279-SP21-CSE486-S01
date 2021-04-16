@@ -1,4 +1,4 @@
-package com.example.assignment.entity;
+package com.example.assignment.room.entity;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;

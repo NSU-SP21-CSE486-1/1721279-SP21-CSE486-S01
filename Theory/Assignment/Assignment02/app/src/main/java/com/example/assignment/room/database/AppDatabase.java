@@ -1,4 +1,4 @@
-package com.example.assignment.database;
+package com.example.assignment.room.database;
 
 import android.content.Context;
 
@@ -6,8 +6,8 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.assignment.dao.StudentInfoDao;
-import com.example.assignment.entity.StudentInfo;
+import com.example.assignment.room.dao.StudentInfoDao;
+import com.example.assignment.room.entity.StudentInfo;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

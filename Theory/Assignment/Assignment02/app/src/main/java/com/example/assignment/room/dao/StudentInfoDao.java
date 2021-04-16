@@ -1,4 +1,4 @@
-package com.example.assignment.dao;
+package com.example.assignment.room.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -8,7 +8,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.assignment.entity.StudentInfo;
+import com.example.assignment.room.entity.StudentInfo;
 
 import java.util.List;
 
