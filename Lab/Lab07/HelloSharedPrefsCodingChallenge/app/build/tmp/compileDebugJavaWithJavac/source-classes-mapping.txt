@@ -1,0 +1,6 @@
+com/example/android/hellosharedprefscodingchallenge/BuildConfig.java
+ com.example.android.hellosharedprefscodingchallenge.BuildConfig
+com/example/android/hellosharedprefscodingchallenge/SettingsActivity.java
+ com.example.android.hellosharedprefscodingchallenge.SettingsActivity
+com/example/android/hellosharedprefscodingchallenge/MainActivity.java
+ com.example.android.hellosharedprefscodingchallenge.MainActivity
