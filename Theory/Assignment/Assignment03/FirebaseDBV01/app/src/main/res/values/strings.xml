@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Application</string>
+    <string name="button_main_view">View Student</string>
+    <string name="button_main_add">Add Student</string>
 </resources>
