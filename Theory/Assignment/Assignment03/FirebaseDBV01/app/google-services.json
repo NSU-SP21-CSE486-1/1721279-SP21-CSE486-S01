@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "126972147239",
+    "project_id": "fir-db-be2eb",
+    "storage_bucket": "fir-db-be2eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126972147239:android:c094d1eb485647577b8002",
+        "android_client_info": {
+          "package_name": "com.example.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126972147239-p1c42uue7i99mu3l3rvht2rhvi67f4sl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcR6anDOm2nhBlY4P0NHNyL18lHvlU7Uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126972147239-p1c42uue7i99mu3l3rvht2rhvi67f4sl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
