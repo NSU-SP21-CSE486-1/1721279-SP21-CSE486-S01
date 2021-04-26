@@ -2,4 +2,33 @@
     <string name="app_name">Application</string>
     <string name="button_main_view">View Student</string>
     <string name="button_main_add">Add Student</string>
+    <string name="editText_name">Enter your full name</string>
+    <string name="textView_name">Name</string>
+    <string name="textView_id">Student ID</string>
+    <string name="editText_id">Enter first 7 digit</string>
+    <string name="button_save">save</string>
+    <string name="textView_school">School</string>
+    <string name="textView_department">Department</string>
+    <string-array name="School_items">
+        <item>Select School</item>
+        <item>SEPS</item>
+        <item>SBE</item>
+        <item>SHS</item>
+        <item>SHLS</item>
+    </string-array>
+    <string-array name="Department_items">
+        <item>Select Department</item>
+        <item>ECE</item>
+        <item>ARC</item>
+        <item>CEE</item>
+        <item>BBA</item>
+    </string-array>
+    <string name="textView_birthday">Date of Birth</string>
+    <string name="button_select_date">Select Date</string>
+    <string name="textView_phone">Phone</string>
+    <string name="editText_phone">Enter your number</string>
+    <string name="textView_nid">NID</string>
+    <string name="editText_nid">Enter 10 digit</string>
+    <string name="button_next">next</string>
+
 </resources>
