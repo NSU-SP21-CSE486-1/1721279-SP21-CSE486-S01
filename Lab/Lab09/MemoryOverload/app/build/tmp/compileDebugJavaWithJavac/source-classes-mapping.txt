@@ -1,0 +1,4 @@
+com/example/android/memoryoverload/MainActivity.java
+ com.example.android.memoryoverload.MainActivity
+com/example/android/memoryoverload/BuildConfig.java
+ com.example.android.memoryoverload.BuildConfig
