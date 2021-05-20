@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CPC</string>
+    <string name="logo">CPC logo</string>
+    <string name="btn_start_msg">Getting Started</string>
 </resources>
