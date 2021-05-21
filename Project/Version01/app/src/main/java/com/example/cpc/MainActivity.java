@@ -1,5 +1,6 @@
 package com.example.cpc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
      Button btn;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,5 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void nextActivity(View view) {
+        Intent intent = new Intent(this,LoginActivity.class);
+        startActivity(intent);
+
     }
 }
