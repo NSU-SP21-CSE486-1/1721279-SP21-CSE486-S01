@@ -8,7 +8,7 @@
     tools:context=".AccountCreated">
 
     <Button
-        android:id="@+id/logoutBtn"
+        android:id="@+id/gotoLoginBtn"
         android:layout_width="123dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
@@ -27,7 +27,7 @@
         android:layout_width="147dp"
         android:layout_height="148dp"
         android:layout_marginTop="204dp"
-        app:layout_constraintBottom_toTopOf="@+id/logoutBtn"
+        app:layout_constraintBottom_toTopOf="@+id/gotoLoginBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -43,7 +43,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/logoutBtn"
+        app:layout_constraintBottom_toTopOf="@+id/gotoLoginBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
