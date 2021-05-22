@@ -1,5 +1,6 @@
 package com.example.cpc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +32,13 @@ public class RegisterActivity extends AppCompatActivity {
                 checkField(email);
                 checkField(password);
                 checkField(phone);
+            }
+        });
+
+        goToLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),LoginActivity.class));
             }
         });
     }
