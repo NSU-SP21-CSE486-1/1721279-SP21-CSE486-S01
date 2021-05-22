@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1012792859689",
+    "project_id": "cpc-app-5cdd0",
+    "storage_bucket": "cpc-app-5cdd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012792859689:android:000a162f82323a41869038",
+        "android_client_info": {
+          "package_name": "com.example.cpc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012792859689-e81dsuc2vucumtt712l6g8o3uf40niit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUhx17EDbhf0OdPzGNCBAXxYuVfoS78RI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012792859689-e81dsuc2vucumtt712l6g8o3uf40niit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
