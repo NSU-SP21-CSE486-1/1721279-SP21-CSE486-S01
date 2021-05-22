@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".RegisterActivity"
-            android:parentActivityName=".LoginActivity"/>
+        <activity android:name=".AccountCreated"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".LoginActivity"
             android:parentActivityName=".MainActivity" />
