@@ -103,7 +103,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    public boolean checkField(EditText textField) {
+    public void checkField(EditText textField) {
         if (textField.getText().toString().isEmpty()) {
             textField.setError("Error");
             valid = false;
@@ -111,7 +111,6 @@ public class LoginActivity extends AppCompatActivity {
             valid = true;
         }
 
-        return valid;
     }
 
 }
