@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -28,7 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
     boolean valid = true;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
-    CheckBox isAdmin, isStudent;
+    CheckBox isAdminBox, isStudentBox;
 
 
     @Override
@@ -47,8 +48,27 @@ public class RegisterActivity extends AppCompatActivity {
         phone = findViewById(R.id.registerPhone);
         registerBtn = findViewById(R.id.registerBtn);
         goToLogin = findViewById(R.id.gotoLogin);
-        isAdmin = findViewById(R.id.isAdmin);
-        isStudent = findViewById(R.id.isStudent);
+        isAdminBox = findViewById(R.id.isAdmin);
+        isStudentBox = findViewById(R.id.isStudent);
+
+        // CheckBox Logic
+        isStudentBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (buttonView.isChecked()) {
+                    isAdminBox.setChecked(false);
+                }
+            }
+        });
+
+        isAdminBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (buttonView.isChecked()) {
+                    isStudentBox.setChecked(false);
+                }
+            }
+        });
 
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +78,7 @@ public class RegisterActivity extends AppCompatActivity {
                 checkField(password);
                 checkField(phone);
 
-                if (!(isAdmin.isChecked() || isStudent.isChecked())) {
+                if (!(isAdminBox.isChecked() || isStudentBox.isChecked())) {
                     Toast.makeText(RegisterActivity.this, "Select Account Type", Toast.LENGTH_LONG).show();
                     return;
                 }
