@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
     boolean valid = true;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
+    CheckBox isAdmin, isStudent;
 
 
     @Override
@@ -45,6 +47,8 @@ public class RegisterActivity extends AppCompatActivity {
         phone = findViewById(R.id.registerPhone);
         registerBtn = findViewById(R.id.registerBtn);
         goToLogin = findViewById(R.id.gotoLogin);
+        isAdmin = findViewById(R.id.isAdmin);
+        isStudent = findViewById(R.id.isStudent);
 
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +57,11 @@ public class RegisterActivity extends AppCompatActivity {
                 checkField(email);
                 checkField(password);
                 checkField(phone);
+
+                if (!(isAdmin.isChecked() || isStudent.isChecked())) {
+                    Toast.makeText(RegisterActivity.this, "Select Account Type", Toast.LENGTH_LONG).show();
+                    return;
+                }
 
                 if (valid) {
 
