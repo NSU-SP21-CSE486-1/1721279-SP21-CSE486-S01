@@ -22,12 +22,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText fullName,email,password,phone;
-    Button registerBtn,goToLogin;
+    EditText fullName, email, password, phone;
+    Button registerBtn, goToLogin;
     boolean valid = true;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
-
 
 
     @Override
@@ -55,14 +54,14 @@ public class RegisterActivity extends AppCompatActivity {
                 checkField(password);
                 checkField(phone);
 
-                if(valid) {
+                if (valid) {
 
-                    fAuth.createUserWithEmailAndPassword(email.getText().toString(),password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                    fAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                         @Override
                         public void onSuccess(AuthResult authResult) {
                             FirebaseUser user = fAuth.getCurrentUser();
                             DocumentReference df = fStore.collection("Users").document(user.getUid());
-                            Map<String,Object> userInfo = new HashMap<>();
+                            Map<String, Object> userInfo = new HashMap<>();
                             userInfo.put("FullName", fullName.getText().toString());
                             userInfo.put("UserEmail", email.getText().toString());
                             userInfo.put("PhoneNumber", phone.getText().toString());
@@ -70,12 +69,13 @@ public class RegisterActivity extends AppCompatActivity {
 
                             df.set(userInfo);
 
-                            startActivity(new Intent(getApplicationContext(),AccountCreated.class));
+                            startActivity(new Intent(getApplicationContext(), AccountCreated.class));
+                            finish();
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(RegisterActivity.this,"Failed to Register", Toast.LENGTH_LONG).show();
+                            Toast.makeText(RegisterActivity.this, "Failed to Register", Toast.LENGTH_LONG).show();
                         }
                     });
                 }
@@ -85,18 +85,19 @@ public class RegisterActivity extends AppCompatActivity {
         goToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                finish();
+
             }
         });
     }
 
 
-
-    public boolean checkField(EditText textField){
-        if(textField.getText().toString().isEmpty()){
+    public boolean checkField(EditText textField) {
+        if (textField.getText().toString().isEmpty()) {
             textField.setError("Error");
             valid = false;
-        }else {
+        } else {
             valid = true;
         }
 
