@@ -94,7 +94,16 @@ public class RegisterActivity extends AppCompatActivity {
                             userInfo.put("FullName", fullName.getText().toString());
                             userInfo.put("UserEmail", email.getText().toString());
                             userInfo.put("PhoneNumber", phone.getText().toString());
-                            userInfo.put("isUser", "1");
+
+                            // Setting user access level
+                            if (isAdminBox.isChecked()) {
+
+                                userInfo.put("isAdmin", "1");
+                            }
+                            if (isStudentBox.isChecked()) {
+
+                                userInfo.put("isUser", "1");
+                            }
 
                             df.set(userInfo);
 
