@@ -7,4 +7,6 @@
     <string name="create_account">Create Account</string>
     <string name="login">Login</string>
     <string name="account_created">Account Created</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 </resources>
